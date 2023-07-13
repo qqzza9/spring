@@ -1,0 +1,23 @@
+#slide{
+    overflow:hidden;
+    position: relative;
+    z-index:1;
+}
+
+#slide>#slide_contents{
+    width:3600px;
+    height:260px;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:1;
+}
+
+#slide>#slide_contents>img{
+    width:1200px;
+    height:260px;
+    box-sizing: border-box;
+    
+    float:left;
+    z-index:1;
+}

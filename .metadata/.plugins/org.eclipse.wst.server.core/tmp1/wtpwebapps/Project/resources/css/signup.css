@@ -1,0 +1,394 @@
+
+/* signup.css */
+
+/* Wrapper styles */
+
+
+@charset "utf-8";
+*{
+    margin:0;
+    padding:0;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.wrapper_signup{
+	width: 1200px;
+	height: 800px;
+    margin:0 auto;
+    background-color: #ffffff;
+	
+}
+/* Signup styles */
+.signup{
+	width: 1200px;
+	height: 70px;
+	background-color: #ffffff;
+}
+
+/* Main body styles */
+.main_body {
+	width: 400px;
+ 	height:550px;
+  	border-radius: 5px;
+  	float:left;
+  	margin-top:60px;
+  	margin-left:380px;
+  	padding:20px;
+  	border-radius: 5px;
+  	background-color: #fff;
+  	border: 5px solid gray;
+
+  
+}
+
+/* Input styles */
+.main__input {
+  display: block;
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+  
+}
+
+.wrap__phone {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.phone__input {
+  width: 70px;
+  height:35px;
+  flex: 1;
+  margin-right: 5px;
+}
+
+
+.phone__input:last-child {
+  margin-right: 0;
+  
+}
+
+.wrap__auth {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.wrap__auth #token {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.auth_button {
+  padding: 8px 12px;
+  border-radius: 3px;
+  font-size: 12px;
+  border: none;
+  color: #fff;
+  cursor: not-allowed;
+}
+
+.auth_button[disabled] {
+  background-color: #ccc;
+}
+
+.auth_button:focus {
+  outline: none;
+}
+
+.wrap__auth #timer {
+  font-weight: bold;
+}
+
+/* Select box styles */
+.select__box {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+/* Radio button styles */
+.wrap__radio {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.wrap__radio div {
+  margin-right: 10px;
+}
+
+/* Error message styles */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+/* Confirm button styles */
+.wrap__confirm {
+  text-align: center;
+}
+
+.confirm__button {
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-size: 14px;
+  background-color: #0068ff;
+  color: #fff;
+  border: none;
+  cursor: not-allowed;
+}
+
+.confirm__button[disabled] {
+  background-color: #ccc;
+}
+
+.confirm__button:focus {
+  outline: none;
+}
+
+/* @charset "utf-8";
+*{
+    margin:0;
+    padding:0;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.wrapper_signup{
+	width: 1200px;
+	height: 800px;
+    margin:0 auto;
+    background-color: #f2f2f2;
+	
+}
+.signup{
+	width: 1200px;
+	height: 70px;
+	background-color: #c0c0c0;
+}
+
+.main_body{
+	width: 500px;
+    height: 650px;
+    float: left;
+    margin-left: 330px;
+   	margin-top: 20px;
+    background-color: aqua;
+    border: 2px solid gray;
+}
+input {
+    border: 1px solid black;
+    border-radius: 3px;
+    line-height: 35px;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.title {
+    text-align: center;
+    font-weight: 700;
+}
+.email input {
+    width: 100%;
+}
+.name input {
+    width: 100%;
+}
+.password input {
+    width: 100%;
+}
+.passwordCheck input {
+    width: 100%;
+
+}
+.phone {
+    display: flex;
+    justify-content: space-between;
+    line-height: 35px;
+}
+#phone1 {
+    width: 18%;
+}
+#phone2 {
+    width: 30%;
+}
+#phone3 {
+    width: 30%;
+}
+
+.auth{
+    display: flex;
+    justify-content: space-between;
+}
+.timer {
+    display: flex;
+    justify-content: space-around;
+}
+.auth div {
+    width: 30%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+}
+.auth button {
+    width: 70%;
+}
+.timer div {
+    width: 30%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+}
+.timer button {
+    width: 70%;
+}
+.area select {
+    width:100%;
+    height: 40px;
+}
+
+.gender {
+    text-align: center;
+}
+.signUp button {
+    width: 100%;
+    cursor:pointer;
+}
+button{
+    cursor:pointer;
+    height: 30px; 
+}
+.error{
+    font-size: 1px;
+    height: 20px;
+    color: red;
+    font-weight: 700;
+}
+ 
+ 
+ html{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+  body {
+    width: 45%;
+    border: 1px solid black;
+} 
+
+input {
+    border: 1px solid black;
+    border-radius: 3px;
+    line-height: 35px;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.wrap{
+    padding: 10px;
+}
+div{
+    padding-top: 3px;
+    padding-bottom: 8px;
+}
+
+.title {
+    text-align: center;
+    font-weight: 700;
+}
+.email input {
+    width: 100%;
+}
+.name input {
+    width: 100%;
+}
+.password input {
+    width: 100%;
+}
+.passwordCheck input {
+    width: 100%;
+
+}
+.phone {
+    display: flex;
+    justify-content: space-between;
+    line-height: 35px;
+}
+#phone1 {
+    width: 18%;
+}
+#phone2 {
+    width: 30%;
+}
+#phone3 {
+    width: 30%;
+}
+
+.auth{
+    display: flex;
+    justify-content: space-between;
+}
+.timer {
+    display: flex;
+    justify-content: space-around;
+}
+.auth div {
+    width: 30%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+}
+.auth button {
+    width: 70%;
+}
+.timer div {
+    width: 30%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 15px;
+}
+.timer button {
+    width: 70%;
+}
+.area select {
+    width:100%;
+    height: 40px;
+}
+
+.gender {
+    text-align: center;
+}
+.signUp button {
+    width: 100%;
+    cursor:pointer;
+}
+button{
+    cursor:pointer;
+    height: 30px; 
+}
+.error{
+    font-size: 1px;
+    height: 20px;
+    color: red;
+    font-weight: 700;
+} */

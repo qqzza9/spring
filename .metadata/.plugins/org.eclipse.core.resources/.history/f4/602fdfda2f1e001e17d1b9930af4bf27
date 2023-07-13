@@ -1,0 +1,108 @@
+@charset "utf-8";
+*{
+    margin:0;
+    padding:0;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+.wrapper_register {
+  width: 1200px;
+  height: 800px;
+  margin:0 auto;
+  background-color: #f2f2f2;
+   
+}
+  
+
+.register_line {
+  height: 1px;
+  background-color: #ccc;
+}
+
+
+.title_area {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.written_area {
+  width: 95%;
+  height: 200px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.register_submit {
+  text-align: center;
+}
+
+.register_submit_button {
+  padding: 10px 25px;
+  margin-left: 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.register_submit_button:hover {
+  background-color: #45a049;
+}
+
+
+
+.field1 {
+  display: inline-block;
+  width: 120px;
+}
+
+.field2 {
+  display: inline-block;
+  width: calc(100% - 120px);
+}
+
+.get-th label,
+.get-td input {
+  display: block;
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.uploadResult {
+  margin-top: 10px;
+}
+
+.uploadResult ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.uploadResult ul li button{
+	width: 30px;
+	height: 30px;
+	/* background: url('/resources/image/x.png'); */
+	
+	 background:"	<img src='/resources/image/x.png'>"
+	
+}
+
+.uploadResult ul li{
+	float:left;
+}
+

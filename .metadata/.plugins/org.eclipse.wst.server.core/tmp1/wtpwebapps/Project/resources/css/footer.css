@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding:0;
+}
+ ul{
+    list-style-type: none;
+
+}
+a{
+   text-decoration: none;
+}
+#footerwrap{
+	width: 100%;
+    height: 100%;
+    background-color: #808080;
+}
+ #footer{
+    width: 1200px;
+    height: 120px;
+    margin: 0 auto;
+    background-color: #808080;
+    color: #fff;
+}
+#footer>#footer1{
+    width: 1200px;
+    height: 50px;
+   background-color: #808080;
+}
+#footer>#footer2{
+    width: 1200px;
+    height: 70px;
+    background-color: #808080;
+}
+#footer>#footer1>#footerfooter{
+    width: 1150px;
+    height: 40px;
+    background-color: #808080;
+    text-align: center;
+    float: left;
+    margin : 5px 0 0 29px;
+    
+}
+#footer1 .fnb {
+	 float: left;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+      text-align: center;
+  
+}
+
+#footer1 .fnb li {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top:7px;
+}
+
+#footer1 .fnb li a {
+  text-decoration: none;
+  color: #000;
+}
+
+#footer1 .familySite {
+  display: flex;
+  align-items: center;
+  float:right;
+  margin-top:5px;
+  
+}
+
+#footer1 .familySite select {
+  margin-right: 5px;
+   width: 150px;
+    height: 30px;
+}
+
+#footer1 .familySite .btnGO {
+  text-decoration: none;
+  color: #fff;
+  background-color: #808080;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+#footer>#footer2>cite{
+    width: 1150px;
+    height: 50px;
+    background-color: #808080;
+    text-align: center;
+    float: left;
+    margin : 10px 0 0 30px;
+  
+}
+

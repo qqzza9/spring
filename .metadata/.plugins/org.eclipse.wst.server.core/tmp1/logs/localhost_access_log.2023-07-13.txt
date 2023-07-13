@@ -1,0 +1,12 @@
+127.0.0.1 - - [13/Jul/2023:12:23:27 +0900] "GET / HTTP/1.1" 200 18525
+0:0:0:0:0:0:0:1 - - [13/Jul/2023:12:23:28 +0900] "GET / HTTP/1.1" 200 18525
+0:0:0:0:0:0:0:1 - - [13/Jul/2023:12:23:28 +0900] "GET /resources/css/header.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [13/Jul/2023:12:23:29 +0900] "GET /resources/css/home.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [13/Jul/2023:12:23:29 +0900] "GET /resources/css/contents.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [13/Jul/2023:12:23:29 +0900] "GET /resources/image/main.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [13/Jul/2023:12:23:29 +0900] "GET /resources/image/telephone.png HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [13/Jul/2023:12:23:29 +0900] "GET /resources/css/footer.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [13/Jul/2023:12:23:29 +0900] "GET /resources/image/locaption.png HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [13/Jul/2023:12:23:29 +0900] "GET /resources/image/faq.png HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [13/Jul/2023:12:23:29 +0900] "GET /resources/image/ico_search.png HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [13/Jul/2023:12:23:29 +0900] "GET /favicon.ico HTTP/1.1" 404 721

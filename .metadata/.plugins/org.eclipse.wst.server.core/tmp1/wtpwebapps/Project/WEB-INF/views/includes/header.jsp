@@ -1,0 +1,134 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="/resources/js/jquery.min.js"></script>
+<link rel="stylesheet" href="/resources/css/header.css">
+
+<title>header</title>
+</head>
+<body>
+<div class="container">
+	<div id="snbwrap">
+		<div id="snb">
+        	<div id ="snb-logo" class="libSite dropdown">
+           		<a href="/" class="button">바로가기</a>
+        </div>
+            <div id ="siteMenu">
+	            <ul id ="gnb1">
+	                <li>
+	                    <a href="/board/list"><span class="menu-item">게시판</span></a>
+	                </li>
+	                <c:choose>
+	                	<c:when test="${not empty auth}">
+                            <li>
+                            	<a href="/member/logout"><span class="menu-item">로그아웃</span></a>
+                          	</li> 
+                          	<li>
+                            	<a href="/seat/main"><span class="menu-item">좌석예약</span></a>
+                       		</li>
+	                    </c:when>
+		               	<c:otherwise>
+	                        <li>
+	                            <a href="/member/login"><span class="menu-item">로그인</span></a>
+	                        </li>
+	                        <li>
+	                            <a href="/member/signup"><span class="menu-item">회원가입</span></a>
+	                        </li>
+		                </c:otherwise>
+	                </c:choose>
+	            </ul>
+            </div>
+   		</div>
+	</div>
+	<div id="headerwrap">
+		 <div id="header">
+            <div id="header-logo">
+                <div id="header1">
+                    <a href="/">
+                    	<img src="/resources/image/logo.png" alt="#">
+                    </a>
+                </div>
+                <div id="header2">
+                    <div id="searchBox" class="searchBoxwrap">
+                        <div class="searchBox">
+                            <label for ="topSearchType" class="blind">검색유형 선택</label>
+                            <select name="topSearchType" id="topSearchType" class="searchSelect">
+                                <option value="Book" selected="selected">소장자료</option>
+                                <option value="HOME">홈페이지</option>
+                            </select>
+                            <div class="keywordInput">
+                               <!--  <label for ="topSearchKeyword" class="blind">검색어 입력</label> -->
+                                <input type="hidden" title="검색어 입력" id="topSearchKeyword" name="searchKeyword"
+                                autocomplete="off" placeholder="검색어 입력">
+                            </div>
+           					<a href="#search" id="topSearchBtn" title="검색" class="btnSearch">
+           						<span class="blind">검색</span>
+           					</a>
+                        </div>
+                    </div> 
+                </div>
+                <div id="header3">
+                    <div class="wrapper_sub">
+                        <c:if test="${!empty auth}">
+                            <span><c:out value="${auth.username}"></c:out>님 접속중입니다.</span>
+                        </c:if>
+                    </div>
+                </div>
+            </div>
+            <nav id="nav">
+                <ul id ="gnb">
+                    <li>
+                        <a href="#">도서관안내</a>
+                        <ul id="lnb">
+                            <li><a href="#">도서관소개</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">자료검색</a>
+                        <ul id="lnb">
+                            <li><a href="#">통합자료검색</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">도서정보</a>
+                        <ul id="lnb">
+                            <li><a href="#">신착도서목록</a></li>
+                           
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">문화마당</a>
+                        <ul id="lnb">
+                            <li><a href="#">도서관달력</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">이용자마당</a>
+                        <ul id="lnb">
+                            <li><a href="#">공지사항</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">내서재</a>
+                        <ul id="lnb">
+                            <li><a href="#">기본정보</a></li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        </div>
+	</div>
+	
+</body>
+</html>
